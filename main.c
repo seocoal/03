@@ -5,12 +5,16 @@
 
 int main(void) {
 	
-	char c;
+	int a;
+	int b;
 	
-	printf("enter a character : ");
-	scanf("%c", &c);
+	printf("Enter the numerator: ");
+	scanf("%i", &a);
 	
-	printf("The next character of %c (%d) is %c (%d) \n", c, c, c+1, c+1);
+	printf("Enter the denominator: ");
+	scanf("%i", &b);
+	
+	printf("The result of the division is %f\n", (double)a/(double)b );
 	
 	return 0;
 }
